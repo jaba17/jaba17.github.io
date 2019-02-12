@@ -1,0 +1,20 @@
+.startpage {
+	background-image: url("https://images.pexels.com/photos/1089552/pexels-photo-1089552.jpeg?cs=srgb&dl=arbeitsplatz-bildschirm-buro-1089552.jpg&fm=jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about{
+  background-color: #191919;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+#code {
+  font-size: 50px;
+  top: 50%;
+  left: 50%;
+}
