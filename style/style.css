@@ -1,20 +1,153 @@
+html {
+	scroll-behavior: smooth;
+}
+
+html, body {
+	margin: 0px
+}
+
 .startpage {
-  background-image: url("https://images.pexels.com/photos/1089552/pexels-photo-1089552.jpeg?cs=srgb&dl=arbeitsplatz-bildschirm-buro-1089552.jpg&fm=jpg");
+	background-image: url("https://images.pexels.com/photos/1089552/pexels-photo-1089552.jpeg?cs=srgb&dl=arbeitsplatz-bildschirm-buro-1089552.jpg&fm=jpg");
   height: 100vh;
-  background-position: center;
+	width: 100vw;
+	display: flex;
+  align-items: center;
+	justify-content: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.full_size_page {
+	width: 100%;
+	height: 100vh;
 }
 
 .about{
   background-color: #191919;
   padding-top: 40px;
   padding-bottom: 40px;
-  width: 100%;
+}
+
+.about_info {
+	font-style: white;
+	font-size: 20px;
+	margin-left: 12vw;
+	margin-right: 12vw;
 }
 
 #code {
+	text-align: center;
   font-size: 50px;
+	font-family: "Gravity-Regular";
   top: 50%;
   left: 50%;
+}
+
+
+#nav_bar {
+	background-color: white;
+	height: 60px !important;
+	position: fixed;
+}
+
+.arrow {
+  box-sizing: border-box;
+  height: 4vw;
+  width: 4vw;
+  border-style: solid;
+  border-color: grey;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+.projects{
+	background-color: #444;
+	font-family: "arial";
+	font-size: 20px;
+	margin: 0 0 0 0;
+	padding: 20px 20px 20px 20px;
+	height: 80vh;
+
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: 100px;
+	grid-template-areas:
+		"a a a a b b b b"
+		"a a a a b b b b"
+		"c c c c d d d d"
+		"c c c c d d d d";
+	align-items: start;
+}
+
+.project_item {
+	background-color: #666;
+	height: 60vh;
+	padding: 5px;
+}
+
+
+/*Alignment declaration for each project item*/
+.project_item_1 {
+  grid-area: a;
+}
+.project_item_2 {
+  grid-area: b;
+}
+.project_item_3 {
+  grid-area: c;
+}
+.project_item_4 {
+  grid-area: d;
+}
+
+
+
+
+.tag{
+	border-radius: 20px;
+	display:inline-block;
+	margin-right: 5px;
+	padding: 6px;
+	font-family: Karla 10px;
+	cursor: pointer;
+
+}
+
+
+/*Color declaration for tags*/
+.tag_network{
+	background-color: #90AFC5;
+}
+
+.tag_hardware{
+	background-color: #336B87;
+}
+
+.tag_raspberry_pi{
+	background-color: #763626;
+}
+
+.tag_hacking{
+	background-color: #598234;
+}
+
+
+.button {
+	border-radius: 15px;
+	background-color: #598238;
+	display:inline-block;
+	padding: 6px;
+	cursor: pointer;
+}
+.button:hover{
+	background-color: #591238;
+
 }
