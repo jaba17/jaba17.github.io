@@ -1,9 +1,71 @@
+@font-face {
+  font-family: anson_regular;
+  src: url("font/Anson_Regular.woff");
+}
+
 html {
 	scroll-behavior: smooth;
 }
 
 html, body {
 	margin: 0px
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 120;
+		overflow: auto;
+}
+
+h3{
+	margin-top: 10px;
+	margin-bottom: 4px;
+	/*font-family: anson_regular;*/
+	font-family: "Gravity-Regular";
+}
+
+p{
+	font-family: "Gravity-Regular";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	/*color: #212529;*/
+}
+
+form{
+	text-align: center;
+}
+
+
+header nav {
+  float: right;
+  margin: 10px 50px 0 0;
+}
+
+header a {
+	font-weight: 500;
+	color: #494949;
+	text-transform: uppercase;
+}
+
+header nav ul li {
+    float: left;
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+		font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style-type: none;
 }
 
 .startpage {
@@ -21,6 +83,8 @@ html, body {
 .full_size_page {
 	width: 100%;
 	height: 100vh;
+	position: relative;
+	overflow: hidden;
 }
 
 .about{
@@ -60,6 +124,7 @@ html, body {
   border-width: 0px 1px 1px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
+	top: 70vh;
 }
 
 .arrow:hover {
@@ -72,13 +137,14 @@ html, body {
 	font-family: "arial";
 	font-size: 20px;
 	margin: 0 0 0 0;
-	padding: 20px 20px 20px 20px;
-	height: 80vh;
+	padding: 2vh 2vh 2vh 2vh;
+	height: 83vh;
 
+	/*Attributes for box display*/
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
-	grid-gap: 10px;
-	grid-auto-rows: 100px;
+	grid-gap: 1vh;
+	grid-auto-rows: 20vh;
 	grid-template-areas:
 		"a a a a b b b b"
 		"a a a a b b b b"
@@ -89,10 +155,9 @@ html, body {
 
 .project_item {
 	background-color: #666;
-	height: 60vh;
+	height: 40vh;
 	padding: 5px;
 }
-
 
 /*Alignment declaration for each project item*/
 .project_item_1 {
@@ -116,7 +181,7 @@ html, body {
 	display:inline-block;
 	margin-right: 5px;
 	padding: 6px;
-	font-family: Karla 10px;
+	font-family: "Gravity-Regular" 7px;
 	cursor: pointer;
 
 }
@@ -150,4 +215,18 @@ html, body {
 .button:hover{
 	background-color: #591238;
 
+}
+
+.see_projects{
+	text-decoration: none;
+}
+
+footer{
+	background-color: #282828;
+	height: 100px;
+	text-align: center;
+	color: #FFF;
+}
+
+.links{
 }

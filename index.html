@@ -9,17 +9,27 @@
     <title></title>
   </head>
   <body onload="type()">
-    <div class="startpage">
-      <div id="code">d</div>
+    <header>
+      <nav id="main-nav">
+        <ul>
+          <li class="unselectable"><a href="#about">About</a></li>
+          <li class="unselectable"><a href="#projects">Projects</a></li>
+          <li class="unselectable"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="startpage">
+      <!--<div id="code">d</div>-->
       <p></p>
       <a data-scroll href="#about">
         <div class="arrow"></div>
-        <div class="arrow"></div>
-
       </a>
       <div class="Index-page-scroll-indicator-line"></div>
-    </div>
-    <div class="full_size_page about" id="about">
+    </section>
+    <section class="full_size_page" id="about">
+
+    </section>
+    <section class="full_size_page about" id="projects">
       <div class="about_info">
         <h3>Projects</h3>
         <p>Check out my projects!</p>
@@ -63,17 +73,29 @@
             </div>
           </div>
         </div>
+        <a href="projects.html"><div class="button see_projects">See all projects</div></a>
       </div>
-    </div>
-    <div class="full_size_page contact">
+    </section>
+    <section class="full_size_page contact" id="contact">
       <h3>Contact Me!</h3>
       <form class="form" action="index.html" method="post">
-        <input type="text" name="name" value="">
-        <input type="text" name="email" value="" placeholder="name@email.com">
-        <input type="text" name="text_message" value="">
+        <label for="name_input">First Name</label>
+        <input type="text" name="name" id="name_input" value=""><br>
+
+        <label for="email_input">Email</label>
+        <input type="text" name="email" id="email_input" value="" placeholder="name@email.com"><br>
+
+        <label for="text_input">Text</label>
+        <input type="text" name="text_message" id="text_input" value=""><br>
         <input type="submit" name="submit_button" value="">
       </form>
-    </div>
+    </section>
   </body>
+  <footer>
+    <div class="links">
+      <a href="https://github.com/jaba17" target="_blank"><img src="img/github_logo.png" width="50px" height= "50px" alt="Visit my GitHub Page"></a>
+      <a href="mailto:jakob.bach15@gmail.com"><img src="img/email_icon.png" width="50px" height= "50px" alt="Write me an email"></a>
+    </div>
+    <div>&copy 2019</div>
+  </footer>
 </html>
-
