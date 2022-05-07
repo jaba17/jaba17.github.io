@@ -1,6 +1,7 @@
 
-theme: jekyll-theme-cayman-blog
+theme: jekyll-theme-cayman
 title: MyBlog
+
 markdown: kramdown
 kramdown:
     math_engine: katex
